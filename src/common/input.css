@@ -16,7 +16,7 @@ input[type="tel"],
 input[type="email"],
 input[type="password"],
 select {
-  width: 400px;
+  width: 250px;
   padding: 6px 12px;
   display: flex;
   background-color: #fff;
@@ -40,4 +40,13 @@ button {
 input:focus {
   outline: none;
   border: 2px solid #6d28d9;
+}
+@media screen and (min-width: 768px) {
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 400px;
+  }
 }

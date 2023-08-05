@@ -17,7 +17,13 @@ const CartPage = () => {
   if (!cart.length)
     return (
       <Layout>
-        <main>
+        <main
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "10px",
+          }}
+        >
           <h2>cart is empty !</h2>
         </main>
       </Layout>

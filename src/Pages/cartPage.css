@@ -5,7 +5,7 @@
   border: 1px solid #ccc;
   flex-direction: column;
   flex: 1;
-  padding: 1rem;
+  padding: 10px;
 }
 
 .cartItem {
@@ -13,10 +13,11 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
 }
 .cartItem .itemImg {
   width: 100px;
-  height: 100px;
+  /* height: 100px; */
 }
 .cartItem .itemImg img {
   width: 100%;
@@ -30,15 +31,15 @@
   background-color: #fff;
   border: 1px solid #ccc;
   flex-direction: column;
-  width: 30%;
-  margin-left: 3rem;
+  width: 100%;
+  margin-top: 15px;
 }
 
 .cartCenter {
   margin-top: 50px;
   display: flex;
-  justify-content: center;
-  width: 90vw;
+  flex-direction: column;
+  width: 100%;
   max-width: 1170px;
 }
 
@@ -54,22 +55,62 @@
   padding-top: 3px;
 }
 
+.btnGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .btnGroup button {
-    cursor: pointer;
+  cursor: pointer;
   outline: none;
   color: #6d28d9;
   border: 1px solid #6d28d9;
   padding: 5px 10px;
   background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
-.btnGroup button:first-child {
-  border-radius: 5px 0 0 5px;
+@media screen and (min-width: 768px) {
+  .btnGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .btnGroup button {
+    border-radius: 0;
+  }
+  .btnGroup button:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+  .btnGroup button:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+  .btnGroup button:nth-child(2) {
+    border-left: 0;
+    border-right: 0;
+  }
 }
-.btnGroup button:last-child {
-  border-radius: 0 5px 5px 0;
-}
-.btnGroup button:nth-child(2) {
-  border-left: 0;
-  border-right: 0;
+
+@media screen and (min-width: 768px) {
+  .cartCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90vw;
+ 
+  }
+  .cartSummery {
+    width: 30%;
+    margin-left: 3rem;
+    margin-top: 0;
+  }
+  .cartItem .itemImg {
+    margin: 10px 0;
+  }
+  .cartItemList{
+    padding: 1rem;
+  }
+
 }

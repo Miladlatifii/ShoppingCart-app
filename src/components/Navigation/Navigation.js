@@ -8,15 +8,16 @@ const Navigation = () => {
   const userData = useAuth();
   return (
     <header className="mainNavigation">
-      <nav>
+      <nav className="navigation">
         <ul>
-          <div>Milad shopping</div>
+     
           <li>
             <NavLink to="/" activeClassName="activeLink" exact>
               home
             </NavLink>
           </li>
         </ul>
+          <h2 className="shoppingTitle">Milad shopping</h2>
         <ul>
           <li className="cartLink">
             <NavLink to="/cart" activeClassName="activeLink">

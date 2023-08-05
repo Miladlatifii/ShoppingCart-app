@@ -3,9 +3,12 @@
   height: 4.5rem;
   background-color: #ede9fe;
   display: flex;
-  justify-content: center ;
+  justify-content: center;
   position: sticky;
   top: 0;
+}
+.shoppingTitle {
+  display: none;
 }
 
 .mainNavigation nav {
@@ -24,7 +27,7 @@
 }
 
 .mainNavigation li {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   display: flex;
   align-items: center;
 }
@@ -57,4 +60,10 @@
   background-color: #6d28d9;
   color: #fff;
   font-size: 14px;
+}
+
+@media screen and (min-width:768px) {
+  .shoppingTitle {
+    display: block;
+  }
 }

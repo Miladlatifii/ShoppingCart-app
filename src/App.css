@@ -1,10 +1,11 @@
 .productList {
-  margin-top: 50px;
+  margin-top: 20px;
   border-radius: 5px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-row-gap: 5rem;
-  grid-column-gap: 5rem;
+  /* grid-row-gap: 5rem;
+  grid-column-gap: 5rem; */
+  gap: 3rem;
   max-width: 1170px;
   width: 90vw;
 }
@@ -24,6 +25,7 @@
 .container {
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 .productDesc {
   padding: 10px;
@@ -50,4 +52,10 @@ button:disabled {
   cursor: not-allowed;
   background-color: #ccc;
   color: #444;
+}
+
+@media screen and (min-width: 768px) {
+  .productList {
+    margin-top: 50px;
+  }
 }
